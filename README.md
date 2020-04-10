@@ -3,7 +3,7 @@ laboratorio 01 simulación
 
 En esta plantilla debe adicionar la documentación del laboratorio
 
-* Nombres y Apellidos Estudiante 1
+* Humberto Sebastián Córdoba Torres
 * Nikolai Alexander Caceres Penagos
 * Esteban Ladino Fajardo
 
