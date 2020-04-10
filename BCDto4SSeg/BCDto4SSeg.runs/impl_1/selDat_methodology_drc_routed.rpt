@@ -1,0 +1,212 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Fri Apr 10 15:47:44 2020
+| Host         : esteban running 64-bit Ubuntu 18.04.4 LTS
+| Command      : report_methodology -file selDat_methodology_drc_routed.rpt -pb selDat_methodology_drc_routed.pb -rpx selDat_methodology_drc_routed.rpx
+| Design       : selDat
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 35
++-----------+------------------+-----------------------------+------------+
+| Rule      | Severity         | Description                 | Violations |
++-----------+------------------+-----------------------------+------------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell | 17         |
+| TIMING-20 | Warning          | Non-clocked latch           | 1          |
+| TIMING-23 | Warning          | Combinational loop found    | 17         |
++-----------+------------------+-----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCD_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCD_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCD_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCD_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxBCDtoSeg/sevSeg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/an_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/an_reg[2]_lopt_replica/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/an_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/an_reg[3]_lopt_replica/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/cont_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin auxSelAn/cont_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch auxFreDiv/freDiv_reg cannot be properly analyzed as its control pin auxFreDiv/freDiv_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__0/S[0] and auxFreDiv/freDiv2_carry__0/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__0/S[1] and auxFreDiv/freDiv2_carry__0/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__0/S[2] and auxFreDiv/freDiv2_carry__0/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__0/S[3] and auxFreDiv/freDiv2_carry__0/O[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__1/S[0] and auxFreDiv/freDiv2_carry__1/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__1/S[1] and auxFreDiv/freDiv2_carry__1/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__1/S[2] and auxFreDiv/freDiv2_carry__1/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__2/S[0] and auxFreDiv/freDiv2_carry__2/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__2/S[1] and auxFreDiv/freDiv2_carry__2/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__2/S[2] and auxFreDiv/freDiv2_carry__2/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__3/S[0] and auxFreDiv/freDiv2_carry__3/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__3/S[1] and auxFreDiv/freDiv2_carry__3/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__3/S[2] and auxFreDiv/freDiv2_carry__3/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__4/S[0] and auxFreDiv/freDiv2_carry__4/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__4/S[1] and auxFreDiv/freDiv2_carry__4/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__4/S[2] and auxFreDiv/freDiv2_carry__4/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between auxFreDiv/freDiv2_carry__5/S[0] and auxFreDiv/freDiv2_carry__5/O[0] to disable the timing loop
+Related violations: <none>
+
+

@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sim_1/new/s1.v,1586544569,verilog,,,,testbench,,,,,,,,
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/BCDtoSeg.v,1586549793,verilog,,/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/freDiv.v,,BCDtoSeg,,,,,,,,
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/freDiv.v,1586554318,verilog,,/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/selAn.v,,mfreDiv,,,,,,,,
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/selAn.v,1586555917,verilog,,/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/selDat.v,,selAn,,,,,,,,
+/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sources_1/new/selDat.v,1586556740,verilog,,/home/esteban/digitalI/practices/BCDto4SSeg/BCDto4SSeg.srcs/sim_1/new/s1.v,,selDat,,,,,,,,

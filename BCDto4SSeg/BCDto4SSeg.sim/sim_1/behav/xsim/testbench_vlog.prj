@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../BCDto4SSeg.srcs/sources_1/new/BCDtoSeg.v" \
+"../../../../BCDto4SSeg.srcs/sources_1/new/freDiv.v" \
+"../../../../BCDto4SSeg.srcs/sources_1/new/selAn.v" \
+"../../../../BCDto4SSeg.srcs/sources_1/new/selDat.v" \
+"../../../../BCDto4SSeg.srcs/sim_1/new/s1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

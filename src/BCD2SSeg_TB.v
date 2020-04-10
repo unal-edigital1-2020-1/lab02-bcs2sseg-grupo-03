@@ -27,6 +27,7 @@ module BCDtoSSeg_TB;
 		BCD = 7; #10;
 		BCD = 8; #10;
 		BCD = 9; #10;
+		BCD= 10; #10;
 
 	end
 
@@ -34,5 +35,5 @@ module BCDtoSSeg_TB;
      $dumpfile("BCDtoSSeg_TB.vcd");
      #(200) $finish;
    end
-
+   
 endmodule
