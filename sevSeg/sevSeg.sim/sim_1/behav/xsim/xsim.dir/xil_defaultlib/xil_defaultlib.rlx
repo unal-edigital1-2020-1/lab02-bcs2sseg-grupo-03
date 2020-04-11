@@ -1,7 +1,0 @@
-0.6
-2019.2
-Nov  6 2019
-21:42:20
-/home/esteban/digitalI/labs/lab02-bcs2sseg-grupo-03/sevSeg/sevSeg.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-/home/esteban/digitalI/labs/lab02-bcs2sseg-grupo-03/src/BCD2SSeg_TB.v,1585670152,verilog,,,,BCDtoSSeg_TB,,,,,,,,
-/home/esteban/digitalI/labs/lab02-bcs2sseg-grupo-03/src/BCDtoSSeg.v,1585509363,verilog,,/home/esteban/digitalI/labs/lab02-bcs2sseg-grupo-03/src/BCD2SSeg_TB.v,,BCDtoSSeg,,,,,,,,
