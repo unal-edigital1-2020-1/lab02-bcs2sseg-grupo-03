@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date         : Fri Apr 10 15:46:43 2020
+| Date         : Sat Apr 11 13:40:44 2020
 | Host         : esteban running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_drc -file selDat_drc_opted.rpt -pb selDat_drc_opted.pb -rpx selDat_drc_opted.rpx
 | Design       : selDat
@@ -24,11 +24,10 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 5
+             Violations found: 3
 +----------+------------------+-----------------------------------------------------+------------+
 | Rule     | Severity         | Description                                         | Violations |
 +----------+------------------+-----------------------------------------------------+------------+
-| LUTLP-1  | Critical Warning | Combinatorial Loop Alert                            | 2          |
 | NSTD-1   | Critical Warning | Unspecified I/O Standard                            | 1          |
 | UCIO-1   | Critical Warning | Unconstrained Logical Port                          | 1          |
 | CFGBVS-1 | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
@@ -36,24 +35,14 @@ Table of Contents
 
 2. REPORT DETAILS
 -----------------
-LUTLP-1#1 Critical Warning
-Combinatorial Loop Alert  
-1 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is auxFreDiv/freDiv2[0]. Please evaluate your design. The cells in the loop are: auxFreDiv/freDiv2_carry_i_3.
-Related violations: <none>
-
-LUTLP-1#2 Critical Warning
-Combinatorial Loop Alert  
-4 LUT cells form a combinatorial loop. This can create a race condition. Timing analysis may not be accurate. The preferred resolution is to modify the design to remove combinatorial logic loops. If the loop is known and understood, this DRC can be bypassed by acknowledging the condition and setting the following XDC constraint on any one of the nets in the loop: 'set_property ALLOW_COMBINATORIAL_LOOPS TRUE [get_nets <myHier/myNet>]'. One net in the loop is auxFreDiv/freDiv2[0]. Please evaluate your design. The cells in the loop are: auxFreDiv/freDiv2_carry_i_3, auxFreDiv/freDiv_reg_i_2, auxFreDiv/freDiv_reg_i_3, auxFreDiv/freDiv_reg_i_8.
-Related violations: <none>
-
 NSTD-1#1 Critical Warning
 Unspecified I/O Standard  
-20 out of 20 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: BCD4[7], BCD4[6], BCD4[5], BCD4[4], BCD4[3], BCD4[2], BCD4[1], BCD4[0], BCDtoSevSeg[6:0], selAn[3:0], divFre.
+33 out of 33 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: BCD[3:0], BCD4[15:0], BCDtoSevSeg[6:0], selAn[3:0], clk, divFre.
 Related violations: <none>
 
 UCIO-1#1 Critical Warning
 Unconstrained Logical Port  
-20 out of 20 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: BCD4[7], BCD4[6], BCD4[5], BCD4[4], BCD4[3], BCD4[2], BCD4[1], BCD4[0], BCDtoSevSeg[6:0], selAn[3:0], divFre.
+33 out of 33 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: BCD[3:0], BCD4[15:0], BCDtoSevSeg[6:0], selAn[3:0], clk, divFre.
 Related violations: <none>
 
 CFGBVS-1#1 Warning

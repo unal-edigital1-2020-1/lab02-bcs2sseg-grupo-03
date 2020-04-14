@@ -17,7 +17,7 @@ module selDat(
  
  wire divFre;
   // declarar
-     
+ 
 
 mfreDiv auxFreDiv(
     .clk(clk),
@@ -34,19 +34,21 @@ BCDtoSeg auxBCDtoSeg(
     .divFre(divFre),
     .an(selAn)
     );              
+
+reg [1:0]con=2'b00; 
     
 always @(posedge divFre)
 begin
 
-case(selAn)
-4'b0111: BCD<=BCD4[15:12];
-4'b1011: BCD<=BCD4[11:8];
-4'b1101: BCD<=BCD4[7:4];
-4'b1110: BCD<=BCD4[3:0];
-default: BCD=4'b1111;
-
-
+case(con)
+2'b00: BCD<=BCD4[15:12];
+2'b01: BCD<=BCD4[11:8];
+2'b10: BCD<=BCD4[7:4];
+2'b11: BCD<=BCD4[3:0];
+default: BCD<=4'b1111;
 endcase
+
+con=con+1;
 
 end
     
