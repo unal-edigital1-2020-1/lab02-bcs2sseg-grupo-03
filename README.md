@@ -10,3 +10,8 @@ En esta plantilla debe adicionar la documentación del laboratorio
 
 Este es la prueba de la tutoria del 14 de abril de 2020
 
+
+insertar imagen 
+
+![Logo de GitHub](https://unicrom.com/wp-content/uploads/85-a-codigo-bcd.png)
+
