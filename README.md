@@ -1,9 +1,11 @@
 # lab01- BCD2SSEG
-laboratorio 01 simulaciÃ³n
+laboratorio 02 implementación
 
-En esta plantilla debe adicionar la documentaciÃ³n del laboratorio
+En esta plantilla debe adicionar la documentacón del laboratorio
 
-* Humberto SebastiÃ¡n CÃ³rdoba Torres
+
+* Humberto Sebastián córrdoba Torres
 * Nikolai Alexander Caceres Penagos
 * Esteban Ladino Fajardo
 
+este es la prueba de la tutoria deñ 14 de abril de 2020
