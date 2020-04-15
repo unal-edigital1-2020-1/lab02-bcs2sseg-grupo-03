@@ -88,20 +88,3 @@ Por último los resultados obtenidos se visualizan en la siguiente Figura
 
 ![fpga2](figs/fig2.png)
 
-
- 
-
-
-
-  
- 
-
-
-Este es la prueba de la tutoria del 14 de abril de 2020
-
-
-insertar imagen 
-
-![Logo de GitHub](https://unicrom.com/wp-content/uploads/85-a-codigo-bcd.png)
-
-![fpga](figs/imageprueba1.jpg)
