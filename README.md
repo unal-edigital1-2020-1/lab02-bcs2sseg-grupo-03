@@ -61,9 +61,9 @@ Por último los resultados obtenidos se visualizan en la siguiente Figura
 
 En el caso de que se quieran mostrar solo numeros decimales, se debera agregar un modulo cuya entrada sea el numero ingresado de 16 bit "input [15:0]" y la salida un numero decimal de 4 bits "output [3:0] Bcd". Lo que hara este modulo sera hacer las siguientes asignaciones:
 
-  assign Bcd = a % 10;            // digit 0, ones place
-  assign Bcd (a / 10) % 10;     // digit 1, tens place
-  assign Bcd (a / 100) % 10;   // digit 2, hundreds place
-  assign Bcd (a / 1000) % 10; // digit 3, thousands place
+  assign Bcd = a % 10;            // digit 0, ones place;
+  assign Bcd (a / 10) % 10;     // digit 1, tens place;
+  assign Bcd (a / 100) % 10;   // digit 2, hundreds place;
+  assign Bcd (a / 1000) % 10; // digit 3, thousands place;
   
 Este numero decimal va a ser el numero que ingrese a nuestro modulo BCD to SSeg.
