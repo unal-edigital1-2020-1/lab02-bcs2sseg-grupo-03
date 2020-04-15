@@ -32,43 +32,17 @@ El código implementado se encuentra en el archivo freDiv.v.
 
 ## Módulo selAn
 
-Se ubica en el archivo selAn.v y se resalta:
+Otro modulo pendiente corresponde a el del selector de display "selAn", el cual permite visualizar cuatro o mas displays de manera simultanea. Este consta de la entrada del divFrec que es el reloj que indica el tiempo que debe tener cada uno de los displays en un estado activo, con el fin de, tal y como se menciono anteriormente, dar una sensacion al usuario de que todos los displays se encuentran funcionando al mismo tiempo; y de la salida "an", la cual consta de 4 bits pues son 4 los displays a utilizar. Se procede creando un registro "cont=2'b00 " que se inicializa con el valor de 2 bits 00.
 
- always@(posedge divFre)
-  
- begin
- 
-  case(cont)
-  
-  2'b00: an=4'b0111;
-  
-  2'b01: an=4'b1011;
-  
-  2'b10: an=4'b1101;
-  
-  2'b11: an=4'b1110;
-  
-  default:
-  
-      begin
-      
-      an=4'b1111;
-      
-      end    
-      
-  endcase
-  
-  cont=cont+1;
-  
- end
+![fpga](figs/an.png)
 
-El registro **cont** es de dos bits lo que permite ahorrarse el condicional que lo reinicializa. Así, cada **an** se asigna según el segmento que se quiera mostrar y que va sincronizado con el franco de subida que tenga el divisor de frecuencia.
+Ahora bien, se desarrolla un ciclo que se ejecuta una vez se presente un flanco de subida en el divisor de frecuencia, mediante el cual se evalua el valor albergado por la variable cont y ,segun sea el caso, se generara un valor de salida del selector an. Por ultimo se le suma un 1 al contador, el cual, como ya fue mencionado, es de dos bits de modo que una vez el valor de este llegue a 11, su proximo valor se desborde y sea 00. Lo que se logra con el codigo en general es, en primer lugar, prender el display An[0], sucesivamente apagar el mismo y encender el siguiente (An[1]), y una vez se encienda An[3] se proceda a encender An[0] nuevamente, de modo que se repita esta labor una y otra vez.
 
-
+Su codificación se ubica en el archivo selAn.v.
 
 ## Módulo selec. dat
 
-Se localiza en selDat.v y es donde se instancian todos los otros módulos. Se resalta que:
+Finalmente se crea el modulo principal "selDat", en el cual se llamaran los modulos presentados anteriormente. Se resalta que:
 
 2'b00: BCD<=BCD4[15:12];
 
