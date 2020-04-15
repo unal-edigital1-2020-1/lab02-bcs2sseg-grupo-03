@@ -16,7 +16,9 @@ Se desarrolla un ciclo a traves de la funcion "always @ (*)" dentro del cual se 
 
  4'b0000: sevSeg <= 7'b0000001; // "0";
  
-Donde una vez se entre al caso BCD=0, es decir, el numero de 4 bits en base binaria 0000, se asigna a la variable de salida sevSeg el valor de 7 bits 0000001 que representa que todos los leds estan encendidos (0, pues el display maneja logica inversa) a excepcion del led en la posicion G.D
+Donde una vez se entre al caso BCD=0, es decir, el numero de 4 bits en base binaria 0000, se asigna a la variable de salida sevSeg el valor de 7 bits 0000001 que representa que todos los leds estan encendidos (0, pues el display maneja logica inversa) a excepcion del led en la posicion G.
+
+En el caso de que solo se quieran representar numeros decimales, una vez el numero de entrada sea 10 se presentara un 0, si este valor es un 11 se presentara un 1 y asi sucesivamente hasta el 15.
 
 ![fpga](figs/display.png)
 
